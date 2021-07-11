@@ -1,7 +1,7 @@
 import { all } from 'redux-saga/effects';
 import appSagas from 'components/Main/App/store/sagas';
 import mockComponentSagas from 'components/commons/misc/MockComponent/store/sagas';
-import todosSagas from 'components/screens/public/Home/store/sagas';
+import todosSagas from 'components/commons/todo/store/sagas';
 
 const sagas = [...appSagas, ...mockComponentSagas, ...todosSagas];
 
