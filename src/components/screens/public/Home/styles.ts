@@ -10,7 +10,7 @@ const useStyles = makeStyles((theme: Theme) => ({
     height: '100%',
     width: '100%',
     position: 'absolute',
-    background: 'linear-gradient(60deg, #FE6B8B 30%, #FF8E53 90%)'
+    background: 'radial-gradient(circle, rgba(144,185,242,1) 35%, rgba(35,106,206,1) 83%)'
   },
   container: {
     display: 'flex',

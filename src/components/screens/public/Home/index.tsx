@@ -142,12 +142,18 @@ const Home = (): JSX.Element => {
         <Box
           boxShadow={10}
           borderRadius={50}
-          paddingTop={4}
+          paddingTop={2}
           paddingBottom={4}
           height="600px"
           width="500px"
           overflow="hidden"
         >
+          <Box fontSize="20px" textAlign="center">
+            N° tareas: {todos.length}
+          </Box>
+          <Box textAlign="center">
+            Pendientes: {todos.filter((todo) => todo.done === false).length}
+          </Box>
           <Box overflow="auto" height="100%">
             {todos.length > 0 &&
               todos.map((item) => (
